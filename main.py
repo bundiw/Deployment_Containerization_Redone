@@ -16,7 +16,7 @@ load_dotenv()
 # JWT_SECRET = os.environ.get('JWT_SECRET', 'abc123abc1234')
 # LOG_LEVEL = os.environ.get('LOG_LEVEL', 'INFO')
 JWT_SECRET = os.getenv('JWT_SECRET')
-LOG_LEVEL =os.getenv('LOG_LEVEL')
+LOG_LEVEL ="info" if os.getenv('LOG_LEVEL') is None else os.getenv('LOG_LEVEL')
 
 
 def _logger():
