@@ -7,7 +7,7 @@ Parameters:
   EksClusterName:
     Type: String
     Description: The name of the EKS cluster created
-    Default: simple-jwt-api
+    Default: simple-jwt-apis
     MinLength: 1
     MaxLength: 100
     ConstraintDescription: You must enter the EKS cluster name
@@ -15,7 +15,7 @@ Parameters:
   GitSourceRepo:
     Type: String
     Description: GitHub source repository - must contain a Dockerfile and buildspec.yml in the base
-    Default: Project_deployment_containerazition
+    Default: Deployment_Containerization_Redone
     MinLength: 1
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub repository name
