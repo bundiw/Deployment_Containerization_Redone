@@ -15,7 +15,7 @@ load_dotenv()
 
 # JWT_SECRET = os.environ.get('JWT_SECRET', 'abc123abc1234')
 # LOG_LEVEL = os.environ.get('LOG_LEVEL', 'INFO')
-JWT_SECRET = os.getenv('JWT_SECRET')
+JWT_SECRET = 'abc123abc1234' if os.getenv('JWT_SECRET') is None else os.getenv('JWT_SECRET')
 #this prevent my error on None value for log level
 LOG_LEVEL ="DEBUG" if os.getenv('LOG_LEVEL') is None else os.getenv('LOG_LEVEL')
 
