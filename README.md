@@ -93,4 +93,4 @@ For more detail about each of these steps, see the project lesson.
 SAMPLE ENV variable for use in the project
 
 JWT_SECRET='bed5be14c567ed53923ce2638d7b6401cf953e9717cc66112d2da9507d879ffe'
-LOG_LEVEL=DEBUG
+LOG_LEVEL='DEBUG'
